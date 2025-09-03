@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				inter: ['Inter', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,7 +30,11 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					'fresh-mint': 'hsl(var(--primary-fresh-mint))',
+					'sage': 'hsl(var(--primary-sage))',
+					'soft': 'hsl(var(--primary-soft))',
+					'forest': 'hsl(var(--primary-forest))',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -61,7 +69,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'light-mint': 'hsl(var(--light-mint))',
+				'charcoal': 'hsl(var(--charcoal))',
+				'warm-gray': 'hsl(var(--warm-gray))',
+				'border-light': 'hsl(var(--border-light))',
+				'success-bright': 'hsl(var(--success-bright))',
+				'gold-accent': 'hsl(var(--gold-accent))',
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-button': 'var(--gradient-button)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-success': 'var(--gradient-success)',
+				'gradient-section': 'var(--gradient-section)',
+			},
+			boxShadow: {
+				'elegant': '0 10px 30px -10px hsl(157 86% 46% / 0.3)',
+				'glow': '0 0 40px hsl(157 86% 46% / 0.4)',
+				'card': '0 12px 40px hsl(0 0% 0% / 0.08)',
+				'premium': '0 24px 80px hsl(157 86% 46% / 0.12)',
+			},
+			scale: {
+				'102': '1.02',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
